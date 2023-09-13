@@ -881,7 +881,7 @@ export function Settings() {
             </>
           ) : null}
 
-          {!accessStore.hideBalanceQuery ? (
+{/*           {!accessStore.hideBalanceQuery ? (
             <ListItem
               title={Locale.Settings.Usage.Title}
               subTitle={
@@ -905,7 +905,7 @@ export function Settings() {
                 />
               )}
             </ListItem>
-          ) : null}
+          ) : null} */}
 
           <ListItem
             title={Locale.Settings.CustomModel.Title}
