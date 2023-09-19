@@ -1,6 +1,11 @@
 import { LLMModel } from "../client/api";
 import { getClientConfig } from "../config/client";
-import { DEFAULT_INPUT_TEMPLATE, DEFAULT_MODELS, StoreKey } from "../constant";
+import {
+  DEFAULT_INPUT_TEMPLATE,
+  DEFAULT_MODELS,
+  DEFAULT_SIDEBAR_WIDTH,
+  StoreKey,
+} from "../constant";
 import { createPersistStore } from "../utils/store";
 
 export type ModelType = (typeof DEFAULT_MODELS)[number]["name"];
@@ -30,7 +35,7 @@ export const DEFAULT_CONFIG = {
   tightBorder: true,
   sendPreviewBubble: true,
   enableAutoGenerateTitle: true,
-  sidebarWidth: 300,
+  sidebarWidth: DEFAULT_SIDEBAR_WIDTH,
 
   disablePromptHint: false,
 
